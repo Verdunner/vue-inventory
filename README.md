@@ -1,19 +1,33 @@
-# Pet #3
+## Vue Inventory
 
-# Энциклопедия по вселенной Star Wars
+### Инвентарь товаров с лоадерами
 
-на открытом API (https://swapi.dev/)
+![preview.png](https://github.com/Verdunner/vue-inventory/blob/deploy/public/preview.png)
 
-![Swapi-Client](https://github.com/DieReiterin/Swapi-Client/blob/main/public/assets/swapiClient.png)
+-   [Деплой проекта на Vercel](https://vercel.app/)
 
-## Демо
+---
 
-https://swapi-client-pied.vercel.app/
+## Команды для запуска проекта
 
-## Локальный запуск
+1. `npm install` (Node v22.11.0, npm v10.9.0)
 
-#### `npm i `
+2. `npm run start` или `npm run build`
 
-#### `npm start`
+---
 
-#### `http://localhost:3000/`
+### Стек технологий проекта:
+
+#### Основные зависимости:
+
+-   Vue 3 Composition Api (script setup)
+
+-   Pinia
+
+-   SCSS
+
+#### Dev зависимости:
+
+-   Vite
+
+-   TypeScript, @types-пакеты

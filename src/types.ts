@@ -1,6 +1,7 @@
 export interface InventoryItem {
     id: number;
-    name: string;
+    img: string;
+    count: number;
     position: number;
 }
 

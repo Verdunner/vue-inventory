@@ -3,9 +3,9 @@ import { defineStore } from 'pinia';
 import { InventoryItem } from '@/types';
 
 const defaultItems: InventoryItem[] = [
-    { id: 1, name: 'Меч', position: 1 },
-    { id: 2, name: 'Щит', position: 2 },
-    { id: 3, name: 'Зелье', position: 3 },
+    { id: 1, img: 'item1', count: 6, position: 1 },
+    { id: 2, img: 'item2', count: 3, position: 2 },
+    { id: 3, img: 'item3', count: 8, position: 3 },
 ];
 
 const STORAGE_KEY = 'inventory';

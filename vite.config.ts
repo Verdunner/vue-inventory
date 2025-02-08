@@ -7,7 +7,6 @@ export default defineConfig({
         alias: {
             '@': '/src',
         },
-        // extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
     },
     server: {
         port: 3000,
