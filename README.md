@@ -2,9 +2,9 @@
 
 ### Инвентарь товаров с лоадерами
 
-![preview.png](https://github.com/Verdunner/vue-inventory/blob/deploy/public/preview.png)
+![preview.png](https://github.com/Verdunner/vue-inventory/blob/main/public/preview.png)
 
--   [Деплой проекта на Vercel](https://vercel.app/)
+-   [Деплой проекта на Vercel](https://vue-inventory-olive.vercel.app/)
 
 ---
 
