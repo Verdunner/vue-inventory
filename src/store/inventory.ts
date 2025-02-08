@@ -1,10 +1,6 @@
 import { defineStore } from 'pinia';
 
-export interface InventoryItem {
-    id: number;
-    name: string;
-    position: number;
-}
+import { InventoryItem } from '@/types';
 
 const defaultItems: InventoryItem[] = [
     { id: 1, name: 'Меч', position: 1 },
@@ -22,7 +18,7 @@ export const useInventoryStore = defineStore('inventory', {
             ) as InventoryItem[]) || defaultItems,
     }),
     actions: {
-        addItem(item: { id: number; name: string; position: number }) {
+        addItem(item: InventoryItem) {
             this.items.push(item);
             this.saveToLocalStorage();
         },
@@ -35,6 +31,17 @@ export const useInventoryStore = defineStore('inventory', {
             if (item) {
                 item.position = position;
                 this.saveToLocalStorage();
+            }
+        },
+        swapPositions(id1: number, id2: number) {
+            const item1 = this.items.find((item) => item.id === id1);
+            const item2 = this.items.find((item) => item.id === id2);
+
+            if (item1 && item2) {
+                [item1.position, item2.position] = [
+                    item2.position,
+                    item1.position,
+                ];
             }
         },
         saveToLocalStorage() {
